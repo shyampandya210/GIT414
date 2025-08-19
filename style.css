@@ -1,6 +1,43 @@
-body {
-    font-size: 18px;
-    font-family: Verdana, sans-serif;
-    padding: 12px;
 
+/* Global */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer{
+    padding: 1rem;
+}
+
+/* Medium Screens */
+@media only screen and (min-width: 600px){
+    nav ui{
+        display:flex;
+        gap: 1rem;
+    }
+    main{
+        background: yellow;
+    }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 900px) {
+    body{
+        max-width: 900px;
+        margin: auto;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    main{
+        background: blue;
+    }
+}
+
+/* Extra Large */
+@media only screen and (min-width: 1200px){
+    main{
+        background: red;
+    }
 }
